@@ -4,15 +4,15 @@ patches {
     about {
         name = "LiquidMusic Patches"
         description = "Clean, native Liquid Glass patches for Apple Music on Android"
-        source = "https://github.com/OWNER/LiquidMusic"
-        author = "LiquidMusic"
-        contact = ""
-        website = ""
+        source = "git@github.com:EnesCevikdogan/LiquidMusic.git"
+        author = "EnesCevikdogan"
+        contact = "https://github.com/EnesCevikdogan/LiquidMusic/issues"
+        website = "https://github.com/EnesCevikdogan/LiquidMusic"
         license = "GPLv3"
     }
 }
 
-val patchListGeneratorClasspath: Configuration = configurations.create("patchListGeneratorClasspath")
+val patchListGeneratorClasspath = configurations.create("patchListGeneratorClasspath")
 
 dependencies {
     compileOnly(libs.gson)
